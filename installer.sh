@@ -121,6 +121,31 @@ password_input() {
 
 ##### Main installation functions #####
 
+
+
+
+main() {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # update os
 update_os() {
   echo "* Checking for updates.."
@@ -228,6 +253,15 @@ nc_dl() {
   echo "* Done installing nextcloud"
 }
 
+
+perform_install() {
+  echo "* Starting installation.. this might take a while!"
+
+}
+
+main() {
+
+
   # confirm installation
   echo -e -n "\n* Initial configuration completed. Continue with installation? (y/N): "
   read -r CONFIRM
@@ -250,10 +284,12 @@ goodbye() {
   echo "* Database name: $MYSQL_DB"
   echo "* Database user: $MYSQL_USER"
   echo "* Database user password: nextcloud_pass"
-  
+
   print_brake 62
 }
 
 # run script
 main
 goodbye
+
+
