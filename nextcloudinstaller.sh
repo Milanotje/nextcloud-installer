@@ -75,7 +75,7 @@ while [ "$done" == false ]; do
     output "[$i] ${options[$i]}"
   done
 
-  echo -n "* Input 1-$((${#actions[@]}-1)): "
+  echo -n "* Input 1-$((${#actions[@]})): "
   read -r action
 
   [ -z "$action" ] && error "Input is required" && continue
