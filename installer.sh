@@ -38,30 +38,6 @@ echo "* apache succesfully restarted!"
 
 
 
-echo "* Installing MariaDB.."
-sudo apt install -y mariadb-server mariadb-client
-echo "* MariaDB Succesfully installed!"
-
-
-echo "* Securing MariaDB.."
-echo "* MariaDB secure installation. The following are safe defaults."
-echo "* Set root password? [Y/n] Y"
-echo "* Remove anonymous users? [Y/n] Y"
-echo "* Disallow root login remotely? [Y/n] Y"
-echo "* Remove test database and access to it? [Y/n] Y"
-echo "* Reload privilege tables now? [Y/n] Y"
-echo "*"
-systemctl start mariadb
-mysql_secure_installation
-echo "* MariaDB Succesfully Secured!"
-
-echo "* Creating Database."
-sudo mysql -u root -p "create database nextcloud_db;"
-sudo mysql -u root -p "create user nextcloud_user@localhost identified by 'nextcloud_pass';"
-sudo mysql -u root -p "grant all privileges on nextcloud_db.* to nextcloud_user@localhost identified by 'nextcloud_pass';  "
-sudo mysql -u root -p "flush privileges;"
-echo "* MariaDB Succesfully Secured!"
-
 
 echo "* Downloading and extracting nextcloud files .. "
  
