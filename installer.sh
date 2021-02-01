@@ -123,29 +123,6 @@ password_input() {
 
 
 
-
-main() {
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # update os
 update_os() {
   echo "* Checking for updates.."
