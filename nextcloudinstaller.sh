@@ -58,7 +58,7 @@ output "When finished you will be able to acces it by going to this link: <ip>/n
 output
 
 nextcloud() {
-  bash <(curl -s https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-installer/$SCRIPT_VERSION/install-panel.sh)
+  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installer/main/installer.sh)
 }
 
 quit() {
