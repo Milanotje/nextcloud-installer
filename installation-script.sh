@@ -65,13 +65,13 @@ quit() {
 while [ "$done" == false ]; do
   options=(
     "Install Nextcloud with apache"
-    "Removing whole nextcloud including web server config"
+    "Remove whole nextcloud including web server config"
     "Quit Installation script"
   )
 
   actions=(
     "Install nextcloud"
-    "Fully remove nextcloud"
+    "Remove whole nextcloud"
     "quit"
   )
 
