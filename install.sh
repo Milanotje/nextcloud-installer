@@ -54,7 +54,7 @@ nextcloud-installer() {
 }
 
 nextcloud-fullremover() {
-  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installer/main/maininstaller.sh)
+  bash <(curl -s https://raw.githubusercontent.com/Milanotje/nextcloud-installer/main/nextcloud-fullremover.sh)
 }
 
 quit() {
