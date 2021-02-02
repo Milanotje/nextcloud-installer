@@ -70,8 +70,8 @@ while [ "$done" == false ]; do
   )
 
   actions=(
-    "Install nextcloud"
-    "Remove whole nextcloud"
+    "nextcloud-installer"
+    "nextcloud-fullremover"
     "quit"
   )
 
